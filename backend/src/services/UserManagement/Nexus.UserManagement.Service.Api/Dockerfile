@@ -8,6 +8,7 @@ COPY ["backend/src/services/UserManagement/Nexus.UserManagement.Service.Applicat
 COPY ["backend/src/services/UserManagement/Nexus.UserManagement.Service.Infrastructure/Nexus.UserManagement.Service.Infrastructure.csproj", "backend/src/services/UserManagement/Nexus.UserManagement.Service.Infrastructure/"]
 COPY ["backend/src/services/UserManagement/Nexus.UserManagement.Service.Domain/Nexus.UserManagement.Service.Domain.csproj", "backend/src/services/UserManagement/Nexus.UserManagement.Service.Domain/"]
 
+COPY ["backend/src/shared/abstractions/Shared.Abstractions/Shared.Abstractions.csproj", "backend/src/shared/abstractions/Shared.Abstractions/"]
 COPY ["backend/src/shared/contracts/Shared.Contracts/Shared.Contracts.csproj", "backend/src/shared/contracts/Shared.Contracts/"]
 COPY ["backend/src/shared/core/Shared.Application/Shared.Application.csproj", "backend/src/shared/core/Shared.Application/"]
 COPY ["backend/src/shared/core/Shared.Kernel/Shared.Kernel.csproj", "backend/src/shared/core/Shared.Kernel/"]

@@ -8,6 +8,7 @@ COPY ["backend/src/services/Authentication/Nexus.Authentication.Service.Applicat
 COPY ["backend/src/services/Authentication/Nexus.Authentication.Service.Infrastructure/Nexus.Authentication.Service.Infrastructure.csproj", "backend/src/services/Authentication/Nexus.Authentication.Service.Infrastructure/"]
 COPY ["backend/src/services/Authentication/Nexus.Authentication.Service.Domain/Nexus.Authentication.Service.Domain.csproj", "backend/src/services/Authentication/Nexus.Authentication.Service.Domain/"]
 
+COPY ["backend/src/shared/abstractions/Shared.Abstractions/Shared.Abstractions.csproj", "backend/src/shared/abstractions/Shared.Abstractions/"]
 COPY ["backend/src/shared/contracts/Shared.Contracts/Shared.Contracts.csproj", "backend/src/shared/contracts/Shared.Contracts/"]
 COPY ["backend/src/shared/core/Shared.Application/Shared.Application.csproj", "backend/src/shared/core/Shared.Application/"]
 COPY ["backend/src/shared/core/Shared.Kernel/Shared.Kernel.csproj", "backend/src/shared/core/Shared.Kernel/"]
