@@ -45,7 +45,6 @@ namespace Nexus.UserManagement.Service.Api
 
             if (!app.Environment.IsDevelopment())
             {
-                app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
 
@@ -56,7 +55,6 @@ namespace Nexus.UserManagement.Service.Api
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.MapStaticAssets();
             app.MapControllers();
 
             app.UseSerilogRequestLogging();
