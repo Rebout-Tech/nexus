@@ -109,6 +109,7 @@ export class ProfilePageComponent implements OnInit {
                 resultDelete.match(
                     () => {
                         this.logoutService.logout();
+                        window.location.href = '/register';
                     },
                     errors => console.error(MapErrorsHelper.mapErrors(errors))
                 );
