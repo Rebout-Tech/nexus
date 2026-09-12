@@ -17,6 +17,7 @@ namespace Nexus.UserManagement.Service.Infrastructure.Extension
 
             services.AddSingleton(_
                 => new EventTypeMappingRegistry()
+                    .Map<UserCreatedDomainEvent, UserCreatedIntegrationEvent>()
                     .Map<UserPasswordResetDomainEvent, UserPasswordResetIntegrationEvent>()
                     .Map<UserAccountDeletedDomainEvent, UserAccountDeletedIntegrationEvent>()
                     .Map<PasswordResetRequestedDomainEvent, PasswordResetRequestedIntegrationEvent>()

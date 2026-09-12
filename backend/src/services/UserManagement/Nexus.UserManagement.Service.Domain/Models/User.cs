@@ -77,6 +77,8 @@ namespace Nexus.UserManagement.Service.Domain.Models
             if (countryId.HasValue)
                 user.IdCountry = countryId;
 
+            user.AddDomainEvent(new UserCreatedDomainEvent(Guid.NewGuid(), DateTime.UtcNow, user.Id, user.UserName));
+
             return user;
         }
 

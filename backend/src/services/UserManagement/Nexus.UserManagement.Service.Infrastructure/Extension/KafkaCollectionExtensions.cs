@@ -22,10 +22,11 @@ namespace Nexus.UserManagement.Service.Infrastructure.Extension
             services.AddSingleton<ITopicResolver>(provider =>
             {
                 var resolver = new TopicResolver()
+                    .Map<UserCreatedIntegrationEvent>("user-management.user.account-created")
                     .Map<UserPasswordResetIntegrationEvent>("user-management.user.password-reset")
                     .Map<UserAccountDeletedIntegrationEvent>("user-management.user.account-delete")
                     .Map<PasswordResetRequestedIntegrationEvent>("crossdyne-notifications")
-                    .Map<ChangeEmailRequestedIntegrationEvent>("crossdyne-notifications");;
+                    .Map<ChangeEmailRequestedIntegrationEvent>("crossdyne-notifications");
                 
                return resolver;
             });
