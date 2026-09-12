@@ -53,6 +53,8 @@ namespace Nexus.Authentication.Service.Api
             app.UseSerilogRequestLogging();
             app.MapControllers();
 
+            app.Logger.LogInformation("Приложение успешно запустилось и готово к работе! 🚀");
+
             app.Run();
         }
     }

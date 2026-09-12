@@ -61,10 +61,7 @@ namespace Nexus.UserManagement.Service.Api
 
             app.UseSerilogRequestLogging();
 
-            app.MapControllerRoute(
-                name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}")
-                .WithStaticAssets();
+            app.Logger.LogInformation("Приложение успешно запустилось и готово к работе! 🚀");
 
             app.Run();
         }
